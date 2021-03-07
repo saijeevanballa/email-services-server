@@ -1,7 +1,6 @@
 const app = require("express")();
 const bodyParser = require("body-parser");
-
-const sendMail = require("./email")
+const sendMail = require("./email");
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
@@ -11,11 +10,9 @@ app.get("/", (req, res, next) => {
 })
 
 app.post("/", (req, res, next) => {
-    res.status(200).send("We will mail shortly.");
-    sendMail(req.body)
+    res.status(200).send("We will send mail shortly.");
+    sendMail(req.body);
 })
-
-
 
 // 404 HANDLER
 app.use((req, res, next) => {
