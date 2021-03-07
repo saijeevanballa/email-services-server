@@ -1,0 +1,28 @@
+{
+  "name": "email-services-server",
+  "version": "1.0.0",
+  "description": "sample email service server",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saijeevanballa/email-services-server.git"
+  },
+  "keywords": [
+    "email"
+  ],
+  "author": "Sai Jeevan Balla",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/saijeevanballa/email-services-server/issues"
+  },
+  "homepage": "https://github.com/saijeevanballa/email-services-server#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "nodemailer": "^6.5.0"
+  }
+}
